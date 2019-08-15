@@ -1,0 +1,4 @@
+<!-- news.wxml -->
+<view class="container">
+    <view class="newsItem">这里是一条宝贝信息</view>
+</view>
