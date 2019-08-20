@@ -7,7 +7,7 @@ Page({
         userInfo: {},
         hasUserInfo: false,
         canIUse: wx.canIUse('button.open-type.getUserInfo'),
-        slo: '传播即是希望!出于公益性质，我可以无偿为您提供技术支持，愿天下的宝贝都能永伴自己父母身边.法律顾问：北京市百瑞律师事务所 张志伟律师 | 吉林保民律师事务所 修保律师'
+        slo: '传播即是希望!愿天下的宝贝都能永伴自己父母身边.'
     },
     //事件处理函数
     bindViewTap: function() {
