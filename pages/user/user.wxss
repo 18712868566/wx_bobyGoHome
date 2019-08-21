@@ -1,0 +1,188 @@
+/**index.wxss**/
+
+page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: #f2f2f2;
+}
+
+.pageUser {
+    height: 100%;
+}
+
+.test-bg {
+    width: 100%;
+    height: 420rpx;
+}
+
+.bg-image {
+    display: block;
+    width: 100%;
+    height: 420rpx;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.userinfo {
+    position: absolute;
+    top: 30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0 20rpx;
+}
+
+.userinfo-avatar {
+    width: 142rpx;
+    height: 142rpx;
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+    color: #fff;
+    margin-left: 30rpx;
+    font-size: 32rpx;
+    position: relative;
+    top: -25rpx;
+}
+
+.userinfo-renzhen {
+    width: 108rpx;
+    height: 33rpx;
+    border-radius: 15rpx;
+    background: #fff;
+    border: 2rpx solid #6e88f5;
+    color: #4768f3;
+    font-size: 24rpx;
+    text-indent: 10rpx;
+    line-break: 33rpx;
+    position: absolute;
+    bottom: 20rpx;
+    left: 190rpx;
+}
+
+.userinfo-renzhen-after {
+    position: absolute;
+    bottom: 8rpx;
+    left: 258rpx;
+}
+
+.renzhen-image {
+    width: 45rpx;
+    height: 45rpx;
+}
+
+.icon_Scan {
+    position: absolute;
+    right: 30rpx;
+    top: 30rpx;
+}
+
+.icon_Scan-image {
+    width: 44rpx;
+    height: 42rpx;
+}
+
+.userinfo-banner {
+    width: 702rpx;
+    height: 251rpx;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 240rpx;
+    border-radius: 8rpx;
+    box-shadow: 0rpx 0rpx 20rpx #e0e0e0;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.items {
+    white-space: nowrap;
+    text-align: center;
+    width: 220rpx;
+}
+
+.icon_ban {
+    width: 64rpx;
+    height: 64rpx;
+    display: block;
+    margin: 0 auto 8rpx;
+}
+
+.userInfo-yingyiong {
+    box-sizing: border-box;
+    background: #fff;
+    width: 702rpx;
+    box-shadow: 0rpx 0rpx 20rpx #e0e0e0;
+    min-height: 200rpx;
+    margin: 90rpx auto 0;
+    padding-top: 20rpx;
+}
+
+.userInfo-yy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* 换行 */
+    flex-wrap: wrap;
+}
+
+.yy-items {
+    white-space: nowrap;
+    text-align: center;
+    width: 220rpx;
+    padding: 24rpx 0rpx;
+}
+
+.icon_yy {
+    width: 85rpx;
+    height: 85rpx;
+    display: block;
+    margin: 0 auto 8rpx;
+}
+
+.tit-yy {
+    font-size: 32rpx;
+    color: #333333;
+    padding-left: 15rpx;
+    position: relative;
+    line-height: 30rpx;
+    display: block;
+    width: 100%;
+    margin-bottom: 20rpx;
+}
+
+.tit-yy:after {
+    content: '';
+    height: 30rpx;
+    width: 8rpx;
+    background: #6d56ff;
+    border-radius: 10rpx;
+    position: absolute;
+    top: 2rpx;
+    left: 0;
+}
+
+.yy-items:nth-child(1),
+.yy-items:nth-child(2),
+.yy-items:nth-child(4),
+.yy-items:nth-child(5) {
+    border-bottom: 1px solid #e7e8ed;
+    border-right: 1px solid #e7e8ed;
+}
+
+.yy-items:nth-child(3),
+.yy-items:nth-child(6) {
+    border-bottom: 1px solid #e7e8ed;
+}
+
+.yy-items:nth-child(7) {
+    border-left: 1px solid #e7e8ed;
+    border-right: 1px solid #e7e8ed;
+}

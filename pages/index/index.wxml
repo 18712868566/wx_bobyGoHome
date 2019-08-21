@@ -1,13 +1,27 @@
-<!-- index.wxml -->
-<view class="test-bg">
-    <image src="../../images/index_bg.jpg" class="bg-image" mode="scaleToFill"></image>
-</view>
-<view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
-        获取头像昵称
-    </button>
-    <block wx:else>
-        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<!-- news.wxml -->
+<view class="pageIndex">
+    <view class="test-bg">
+        <view class="seach-cell ">
+            <image class="icon_seach" src='../../images/icon_seach.png' mode="scaleToFill"></image>
+            <input class="seach_input" auto-focus placeholder="传播即是希望!愿天下的宝贝都能永伴自己父母身边." />
+        </view>
+        <image src="../../images/Navigation.png" class="bg-image" mode="scaleToFill"></image>
+        <swiper class="swp_ban" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{imgUrls}}" wx:key="index">
+                <swiper-item>
+                    <image src="{{item}}" class="slide-image" mode="scaleToFill" />
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view class="slo"></view>
+    <view class="box-gonggao">
+        <view class="ggtxt">
+            <image src="../../images/icon_home_gg.png" class="icon_home_gg" mode="scaleToFill"></image>
+            第一站：北海道 赏樱花、吃寿司、钓海鲜，体验自...
+        </view>
+    </view>
+    <view class="newsItem">
+        <text class="tit2">最新消息</text>
+    </view>
 </view>

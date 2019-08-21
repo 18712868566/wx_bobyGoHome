@@ -1,30 +1,36 @@
 {
-    "pages": ["pages/news/news", "pages/index/index"],
+    "pages": ["pages/index/index", "pages/user/user", "pages/news/news"],
     "window": {
         "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
+        "navigationBarBackgroundColor": "#F6534B",
         "navigationBarTitleText": "公益中国:宝贝回家",
-        "navigationBarTextStyle": "black",
-        "backgroundColor": "#eeeeee"
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#f6534b"
     },
     "debug": true,
     "sitemapLocation": "sitemap.json",
     "tabBar": {
         "list": [{
-                "pagePath": "pages/news/news",
-                "text": "宝贝信息",
-                "iconPath": "images/book.png",
-                "selectedIconPath": "images/book_curr.png"
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "images/home.png",
+                "selectedIconPath": "images/home_curr.png"
             },
             {
-                "pagePath": "pages/index/index",
+                "pagePath": "pages/news/news",
+                "text": "资讯",
+                "iconPath": "images/news.png",
+                "selectedIconPath": "images/news_curr.png"
+            },
+            {
+                "pagePath": "pages/user/user",
                 "text": "我的",
                 "iconPath": "images/person.png",
                 "selectedIconPath": "images/person_curr.png"
             }
         ],
         "color": "#000",
-        "selectedColor": "#1296db",
+        "selectedColor": "#e98053",
         "borderStyle": "black"
     },
     "networkTimeout": {
