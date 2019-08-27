@@ -96,6 +96,18 @@ Page({
                     })
                 }
             })
+        };
+        wx.showShareMenu({
+            withShareTicket: true
+        })
+    },
+    onShareAppMessage: function(data) {
+        // 当页面被分享时会进入这个回调
+        // 返回一个对象，作为小程序处理分享的参数，对象内容和小程序页面 onShareAppMessage 回调可返回对象内容基本一致，具体可参考官方文档：https://developers.weixin.qq.com/miniprogram/dev/reference/api/Page.html#onShareAppMessage-Object-object
+        return {
+            title: '公益中国:宝贝回家',
+            path: '/home/index', // 这里的 path 是页面 url，而不是小程序路由
+            imageUrl: 'https://www.sunxiaoning.com/usr/uploads/2019/03/3616970405.jpeg'
         }
     },
     getUserInfo: function(e) {

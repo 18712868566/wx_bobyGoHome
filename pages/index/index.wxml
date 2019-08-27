@@ -1,15 +1,15 @@
 <!-- news.wxml -->
 <view class="pageIndex">
     <view class="test-bg">
-        <view class="seach-cell ">
+        <!-- <view class="seach-cell ">
             <image class="icon_seach" src='../../images/icon_seach.png' mode="scaleToFill"></image>
             <input class="seach_input" auto-focus placeholder="传播即是希望!愿天下的宝贝都能永伴自己父母身边." />
-        </view>
+        </view> -->
         <image src="../../images/Navigation.png" class="bg-image" mode="scaleToFill"></image>
         <swiper class="swp_ban" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}" duration="{{duration}}">
             <block wx:for="{{imgUrls}}" wx:key="index">
                 <swiper-item>
-                    <image src="{{item}}" class="slide-image" mode="scaleToFill" />
+                    <image src="{{item}}" class="slide-image" mode="widthFix" />
                 </swiper-item>
             </block>
         </swiper>
@@ -18,10 +18,40 @@
     <view class="box-gonggao">
         <view class="ggtxt">
             <image src="../../images/icon_home_gg.png" class="icon_home_gg" mode="scaleToFill"></image>
-            第一站：北海道 赏樱花、吃寿司、钓海鲜，体验自...
+            <text class="">{{gonggao}}</text>
         </view>
     </view>
     <view class="newsItem">
-        <text class="tit2">最新消息</text>
+        <view class="tit2">最新消息</view>
+        <view class="after"></view>
+    </view>
+    <view class="newsItem">
+        <view class="dataInfo" wx:for="{{dataList}}" wx:for-index="idx" wx:for-item="itemName" wx:key="{{index}}">
+            <image src="{{itemName.child_pic}}" class="child_pic" mode="widthFix" lazy-load="true"></image>
+            <view class="info">
+                <text class="idx">编号:{{idx+1}}</text>
+                <text class="name">姓名:{{itemName.name}}</text>
+                <text class="sex">性别:{{itemName.sex}}</text>
+                <text class="province">省份:{{itemName.province}}</text>
+                <view class="birth_time">出生日期：{{itemName.birth_time}}</view>
+                <view class="lost_time">失踪时间：{{itemName.lost_time}}</view>
+                <view class="lost_place">失踪地点：{{itemName.lost_place}}</view>
+                <view class="child_feature">失踪人特征描述：{{itemName.child_feature}}</view>
+            </view>
+            <view class="view_ban">
+                <view class="tipsMsg btns" bindtap="alertMsg">
+                    <image src="../../images/list/chakan.png" class="icon_chakan" mode="scaleToFill"></image>
+                    <text>查看详情</text>
+                </view>
+                <view class="share btns" bindtap="share">
+                    <image src="../../images/list/share.png" class="icon_share" mode="scaleToFill"></image>
+                    <text>转发传播</text>
+                </view>
+                <view class="upData btns" bindtap="upData">
+                    <image src="../../images/list/xiansuo.png" class="icon_xiansuo" mode="scaleToFill"></image>
+                    <text>提供线索</text>
+                </view>
+            </view>
+        </view>
     </view>
 </view>

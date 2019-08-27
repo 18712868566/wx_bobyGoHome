@@ -1,11 +1,16 @@
 {
-    "pages": ["pages/index/index", "pages/user/user", "pages/news/news"],
+    "pages": [
+        "pages/index/index",
+        "pages/user/user",
+        "pages/news/news",
+        "pages/detail/detail"
+    ],
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#F6534B",
         "navigationBarTitleText": "公益中国:宝贝回家",
         "navigationBarTextStyle": "white",
-        "backgroundColor": "#f6534b"
+        "backgroundColor": "#F6534B"
     },
     "debug": true,
     "sitemapLocation": "sitemap.json",

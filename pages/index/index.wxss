@@ -20,15 +20,14 @@ page {
 
 .swp_ban {
     position: absolute;
-    top: 150rpx;
+    top: 35rpx;
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 9;
-    width: 640rpx;
-    height: 320rpx;
-    border-radius: 25rpx;
+    width: 100%;
+    height: 330rpx;
     overflow: hidden;
-    box-shadow: 2rpx 2rpx 20rpx #666;
+    box-shadow: 2rpx 2rpx 20rpx rgba(0, 0, 0, 0.28);
 }
 
 .slide-image {
@@ -41,14 +40,14 @@ page {
     top: 40rpx;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 640rpx;
+    width: 710rpx;
     height: 60rpx;
     border-radius: 30rpx;
-    box-shadow: 0rpx 0rpx 20rpx #666;
+    box-shadow: 0rpx 0rpx 20rpx #fff;
 }
 
 .seach_input {
-    width: 600rpx;
+    width: 710rpx;
     display: block;
     height: 60rpx;
     color: #333;
@@ -69,21 +68,20 @@ page {
 
 .slo {
     width: 100%;
-    height: 200rpx;
+    height: 65rpx;
     /* background: rgba(0, 0, 0, 0.5); */
 }
 
 .box-gonggao {
-    width: 640rpx;
+    width: 740rpx;
     height: 80rpx;
     margin: 15rpx auto;
-    background: #fff;
-    box-shadow: 0rpx 0rpx 10rpx #999;
-    border-radius: 10rpx;
+    padding-bottom: 15rpx;
+    border-bottom: 1rpx solid #f8f6f9;
 }
 
 .ggtxt {
-    width: 620rpx;
+    width: 100%;
     text-overflow: ellipsis;
     white-space: nowrap;
     /*禁止自动换行*/
@@ -98,4 +96,98 @@ page {
     height: 40rpx;
     position: relative;
     top: 11rpx;
+}
+
+
+/* data数据展示 */
+
+.newsItem {
+    position: relative;
+    overflow-y: auto;
+}
+
+.newsItem .tit2 {
+    font-size: 34rpx;
+    color: #333;
+    font-style: italic;
+    width: 710rpx;
+    margin: 0 auto 20rpx;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.newsItem .after {
+    height: 10rpx;
+    width: 140rpx;
+    background: #ffdc00;
+    position: absolute;
+    left: 19rpx;
+    top: 30rpx;
+    border-radius: 10rpx;
+}
+
+.dataInfo {
+    width: 710rpx;
+    min-height: 400rpx;
+    background: #fff;
+    box-shadow: 0rpx 0rpx 10rpx rgba(0, 0, 0, 0.28);
+    border-radius: 10rpx;
+    margin: 5rpx auto 35rpx;
+}
+
+.child_pic {
+    width: 100%;
+    height: 299rpx;
+    margin: 0 auto;
+    display: block;
+}
+
+.info {
+    padding: 20rpx 20rpx;
+}
+
+.info text {
+    color: #f6534b;
+    font-size: 30rpx;
+    display: inline-block;
+    margin: 0 20rpx 0 0;
+    font-weight: bold;
+}
+
+.birth_time,
+.lost_time,
+.lost_place,
+.child_feature {
+    display: block;
+    font-size: 30rpx;
+    color: #666;
+}
+
+.view_ban {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10rpx 0 15rpx;
+    border-top: 1rpx solid #f8f6f9;
+}
+
+.icon_chakan,
+.icon_share,
+.icon_xiansuo {
+    width: 42rpx;
+    height: 42rpx;
+}
+
+.view_ban image {
+    display: block;
+    margin: 0 auto 10rpx;
+}
+
+.view_ban .btns {
+    flex: 1 1 33.33%;
+    text-align: center;
+    font-size: 24rpx;
+    color: #666;
 }
