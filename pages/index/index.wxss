@@ -191,3 +191,14 @@ page {
     font-size: 24rpx;
     color: #666;
 }
+
+button::after {
+    border: none;
+}
+
+button {
+    background-color: #fff;
+    line-height: 32rpx;
+    font-size: 24rpx;
+    color: #666;
+}

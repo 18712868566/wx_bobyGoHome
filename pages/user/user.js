@@ -34,34 +34,19 @@ Page({
             },
             {
                 index: '1',
-                img: '../../images/yingyong2.png',
+                img: '../../images/yingyong6.png',
                 name: '分享'
             },
             {
                 index: '2',
                 img: '../../images/yingyong3.png',
                 name: '客服'
-            },
-            {
+            }
+            /* {
                 index: '3',
-                img: '../../images/yingyong4.png',
-                name: '联系方式'
-            },
-            {
-                index: '4',
-                img: '../../images/yingyong5.png',
-                name: '意见反馈'
-            },
-            {
-                index: '5',
-                img: '../../images/yingyong6.png',
-                name: '我的发布'
-            },
-            {
-                index: '6',
                 img: '../../images/yingyong7.png',
                 name: '打赏'
-            }
+            } */
         ]
     },
     //事件处理函数
@@ -117,5 +102,27 @@ Page({
             userInfo: e.detail.userInfo,
             hasUserInfo: true
         })
+    },
+    alertMsg: function() {
+        wx.showModal({
+            title: '提示',
+            content: '未开放此功能,敬请期待!',
+            showCancel: false
+        })
+    },
+    // 客服
+    handleContact(e) {
+        console.log(e.path)
+        console.log(e.query)
+    },
+    gogg: function(e) {
+        wx.navigateTo({
+            url: '../gonggao/gg',
+            success: (result) => {
+                console.log(result);
+            },
+            fail: () => {},
+            complete: () => {}
+        });
     }
 })

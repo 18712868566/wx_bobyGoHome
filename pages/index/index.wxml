@@ -43,14 +43,14 @@
                     <image src="../../images/list/chakan.png" class="icon_chakan" mode="scaleToFill"></image>
                     <text>查看详情</text>
                 </view>
-                <view class="share btns" bindtap="share">
+                <button open-type='share' title="转发传播" class="share" hover-class="none">
                     <image src="../../images/list/share.png" class="icon_share" mode="scaleToFill"></image>
-                    <text>转发传播</text>
-                </view>
-                <view class="upData btns" bindtap="upData">
+                    传播分享
+                </button>
+                <button class="upData btns" open-type="contact" bindcontact="handleContact">
                     <image src="../../images/list/xiansuo.png" class="icon_xiansuo" mode="scaleToFill"></image>
-                    <text>提供线索</text>
-                </view>
+                    提供线索
+                </button>
             </view>
         </view>
     </view>

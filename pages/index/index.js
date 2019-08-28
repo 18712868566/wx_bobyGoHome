@@ -49,7 +49,8 @@ Page({
     },
     // 以上是微信swiper组件方法
     onLoad: function(options) {
-        // Do some initialize when page load.
+        console.log(options)
+            // Do some initialize when page load.
         let that = this;
         wx.request({
             url: 'https://www.easy-mock.com/mock/5d63c5f00e59634a99eac17e/wxapp/wxbabyhome', //仅为示例，并非真实的接口地址
@@ -71,13 +72,16 @@ Page({
             withShareTicket: true
         })
     },
-    onShareAppMessage: function(data) {
+    onShareAppMessage: function(res) {
+        if (res.form === 'button') {
+            console.log(res.target, res)
+        }
         // 当页面被分享时会进入这个回调
         // 返回一个对象，作为小程序处理分享的参数，对象内容和小程序页面 onShareAppMessage 回调可返回对象内容基本一致，具体可参考官方文档：https://developers.weixin.qq.com/miniprogram/dev/reference/api/Page.html#onShareAppMessage-Object-object
         return {
             title: '公益中国:宝贝回家',
             path: '/home/index', // 这里的 path 是页面 url，而不是小程序路由
-            imageUrl: 'https://www.sunxiaoning.com/usr/uploads/2019/03/3616970405.jpeg'
+            imageUrl: '../../images/ban4.png'
         }
     },
     alertMsg: function() {
@@ -86,5 +90,10 @@ Page({
             content: '因个人类型的小程序功能限制,暂不开放此功能',
             showCancel: false
         })
+    },
+    // 客服
+    handleContact(e) {
+        console.log(e.path)
+        console.log(e.query)
     }
 })

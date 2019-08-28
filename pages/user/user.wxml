@@ -1,6 +1,6 @@
 <!-- index.wxml -->
 <view class="pageUser">
-    <view class="icon_Scan">
+    <view class="icon_Scan" bindtap="alertMsg">
         <image src="../../images/icon_Scan.png" class="icon_Scan-image" mode="scaleToFill"></image>
     </view>
     <view class="test-bg">
@@ -20,7 +20,7 @@
         </block>
     </view>
     <view class="userinfo-banner">
-        <view class="items" wx:for="{{userInfoItem}}" wx:key="index">
+        <view class="items" wx:for="{{userInfoItem}}" wx:key="index" bindtap="alertMsg">
             <image src="{{item.img}}" mode="cover" class="icon_ban"></image>
             <text class="">{{item.name}}</text>
         </view>
@@ -28,10 +28,18 @@
     <view class="userInfo-yingyiong">
         <text class="tit tit-yy">功能应用</text>
         <view class="userInfo-yy">
-            <view class="yy-items" wx:for="{{yingyong}}" wx:key="index">
-                <image src="{{item.img}}" mode="cover" class="icon_yy"></image>
-                <text class="">{{item.name}}</text>
+            <view class="btns" bindtap="gogg">
+                <image src="../../images/yingyong1.png" class="icon_chakan" mode="scaleToFill"></image>
+                <text>公告</text>
             </view>
+            <button class="share" open-type='share' title="转发传播" hover-class="none">
+                <image src="../../images/yingyong2.png" class="icon_share" mode="scaleToFill"></image>
+                分享
+            </button>
+            <button class="upData btns" open-type="contact" bindcontact="handleContact">
+                <image src="../../images/yingyong3.png" class="icon_xiansuo" mode="scaleToFill"></image>
+                客服
+            </button>
         </view>
     </view>
 </view>

@@ -120,31 +120,42 @@ page {
     background: #fff;
     width: 702rpx;
     box-shadow: 0rpx 0rpx 20rpx #e0e0e0;
-    min-height: 200rpx;
-    margin: 90rpx auto 0;
-    padding-top: 20rpx;
+    min-height: 220rpx;
+    margin: 100rpx auto 0;
+    padding: 20rpx 0;
 }
 
 .userInfo-yy {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* 换行 */
     flex-wrap: wrap;
+    padding: 10rpx 0 15rpx;
 }
 
-.yy-items {
-    white-space: nowrap;
-    text-align: center;
-    width: 220rpx;
-    padding: 24rpx 0rpx;
-}
-
-.icon_yy {
+.userInfo-yy image {
+    display: block;
+    margin: 35rpx auto 10rpx;
     width: 85rpx;
     height: 85rpx;
-    display: block;
-    margin: 0 auto 8rpx;
+}
+
+.userInfo-yy .btns {
+    flex: 1 1 33.33%;
+    text-align: center;
+    font-size: 24rpx;
+    color: #666;
+}
+
+button::after {
+    border: none;
+}
+
+button {
+    background-color: #fff;
+    line-height: 32rpx;
+    font-size: 24rpx;
+    color: #666;
 }
 
 .tit-yy {
@@ -173,16 +184,11 @@ page {
 .yy-items:nth-child(2),
 .yy-items:nth-child(4),
 .yy-items:nth-child(5) {
-    border-bottom: 1px solid #e7e8ed;
     border-right: 1px solid #e7e8ed;
 }
 
-.yy-items:nth-child(3),
-.yy-items:nth-child(6) {
-    border-bottom: 1px solid #e7e8ed;
-}
-
-.yy-items:nth-child(7) {
+.yy-items:nth-child(4) {
     border-left: 1px solid #e7e8ed;
     border-right: 1px solid #e7e8ed;
+    border-bottom: none;
 }
